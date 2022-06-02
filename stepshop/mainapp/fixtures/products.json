@@ -1,0 +1,62 @@
+[
+  {
+    "model": "mainapp.product",
+    "pk": 1,
+    "fields": {
+      "category": 1,
+      "name": "Джинсы синие",
+      "image": "product_images/big-02.jpg",
+      "short_desc": "Очень нежные",
+      "description": "",
+      "price": "500.00",
+      "quantity": 5,
+      "created_at": "2022-06-01T11:40:43.669Z",
+      "updated_at": "2022-06-02T10:18:31.806Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 2,
+    "fields": {
+      "category": 1,
+      "name": "Джинсы черные",
+      "image": "product_images/product-02.jpg",
+      "short_desc": "Очень нежные",
+      "description": "",
+      "price": "300.00",
+      "quantity": 5,
+      "created_at": "2022-06-01T11:41:47.205Z",
+      "updated_at": "2022-06-02T09:23:07.463Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 3,
+    "fields": {
+      "category": 3,
+      "name": "Кеды белые",
+      "image": "product_images/product-04.jpg",
+      "short_desc": "",
+      "description": "",
+      "price": "2000.00",
+      "quantity": 5,
+      "created_at": "2022-06-02T09:22:16.797Z",
+      "updated_at": "2022-06-02T10:22:07.677Z"
+    }
+  },
+  {
+    "model": "mainapp.product",
+    "pk": 4,
+    "fields": {
+      "category": 2,
+      "name": "Красная футболка(тоже обычная)",
+      "image": "",
+      "short_desc": "Только обычная футболка",
+      "description": "",
+      "price": "600.00",
+      "quantity": 3,
+      "created_at": "2022-06-02T09:48:18.116Z",
+      "updated_at": "2022-06-02T09:49:52.581Z"
+    }
+  }
+]

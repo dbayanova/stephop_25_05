@@ -1,0 +1,26 @@
+[
+  {
+    "model": "mainapp.productcategory",
+    "pk": 1,
+    "fields": {
+      "name": "Джинсы",
+      "description": "Обычные синие джинсы"
+    }
+  },
+  {
+    "model": "mainapp.productcategory",
+    "pk": 2,
+    "fields": {
+      "name": "Футболка",
+      "description": "Самые обычные футболки"
+    }
+  },
+  {
+    "model": "mainapp.productcategory",
+    "pk": 3,
+    "fields": {
+      "name": "Кеды",
+      "description": "Просто миленькие кедики"
+    }
+  }
+]
