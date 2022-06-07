@@ -11,7 +11,7 @@
     "model": "mainapp.productcategory",
     "pk": 2,
     "fields": {
-      "name": "Футболка",
+      "name": "Футболки",
       "description": "Самые обычные футболки"
     }
   },
