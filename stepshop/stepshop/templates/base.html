@@ -39,8 +39,10 @@
             <span>
 
               {% if user.is_authenticated %}
-               {{user.username}}
-                |<a href="{% url 'auth:logout' %}">Выйти</a>
+              <a href="{% url 'auth:edit' %}">
+                {{user.username}}
+              </a>
+              |<a href="{% url 'auth:logout' %}">Выйти</a>
               {% else %}
                 <a href="{% url 'auth:login' %}">Войти</a>
               {% endif %}

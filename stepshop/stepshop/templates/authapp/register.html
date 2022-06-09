@@ -2,64 +2,57 @@
 {% load static %}
 
 {% block title %}
-  {{title|capfirst}}
+    {{ title|capfirst }}
 {% endblock %}
-
 
 {% block content %}
-  <div class="container">
+
+<div class="container">
+
     <h1>{{ title|capfirst }}</h1>
 
-
-
     <div class="row">
-      <div class="mx-auto col-4">
-        <form class="form-horizontal" action="{% url 'auth:register' %}" method="post" enctype="multipart/form-data">
-          {% csrf_token %}
-          <p class="form-control">
-            <label for="login">Логин:
-            {{ register_form.username }}
-            </label>
-          </p>
-          <p class="form-control">
-            <label>Имя:
-              {{ register_form.first_name }}
-            </label>
-          </p>
-          <p class="form-control">
-            <label>Пароль:
-              {{ register_form.password1 }}
-            </label>
-          </p>
-          <p class="form-control">
-            <label>Подтверждение пароля:
-              {{ register_form.password2 }}
-            </label>
-          </p>
-          <p class="form-control">
-            <label>Эл. почта:
-              {{ register_form.email }}
-            </label>
-          </p>
-          <p class="form-control">
-            <label>Возраст:
-              {{ register_form.age }}
-            </label>
-          </p>
-          <p class="form-control">
-            <label>Аватарка:
-              {{ register_form.avatar }}
-            </label>
-          </p>
-
-          <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
-        </form>
-
-
-      </div>
-
+        <div class="mx-auto col-3">
+            <form class="form-horizontal" action="{% url 'auth:register' %}" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <p>
+                 <label for="first_name">Имя: </label>
+                  {{ register_form.first_name }}
+                </p>
+                <p>
+                <label for="username">Логин:</label>
+                    {{ register_form.username }}
+                </p>
+                <p>
+                <label for="email">E-mail:</label>
+                    {{ register_form.email }}
+                    {{ register_form.errors.email }}
+                </p>
+                <p>
+                    <label for="password1">Пароль:</label>
+                        {{ register_form.password1 }}
+                        {{ register_form.errors.password1 }}
+                </p>
+                <p>
+                    <label for="password2">Подтверждение пароля:</label>
+                        {{ register_form.password2 }}
+                        {{ register_form.errors.password2 }}
+                </p>
+                  <p>
+                <label for="age">Возраст: </label>
+                    {{ register_form.age }}
+                    {{ register_form.errors.age }}
+                </p>
+                  <p>
+                <label>Аватар:</label>
+                    {{ register_form.avatar }}
+                </p>
+                <button type="submit" class="btn btn-primary">Зарегистрироваться</button>
+            </form>
+        </div>
     </div>
+</div>
 
 
-  </div>
 {% endblock %}
+
