@@ -19,7 +19,7 @@ from stepshop.views import index, contact, about
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
     path('', index, name='index'),
     path('contact/', contact, name='contact'),
     path('about/', about, name='about'),
