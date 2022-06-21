@@ -61,7 +61,7 @@
                 <div class="owl-carousel owl-theme">
 
                     {% for product in same_products %}
-                    <a href="product.html">
+                    <a href="{% url 'products:product' product.pk %}">
                         <div class="featured-item">
                             <img src="/media/{{ product.image }}" alt="{{ product.name }}">
                             <h4>{{ product.name }}</h4>
