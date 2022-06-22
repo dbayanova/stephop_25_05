@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load my_tags %}
 
 {% block title %}{{ title|capfirst }}{% endblock %}
 
@@ -41,7 +42,7 @@
 
                     <a href="{% url 'products:product' product.pk %}">
                         <div class="featured-item">
-                            <img src="/media/{{ product.image }}" alt="{{ product.name|capfirst }}">
+                            <img src="{{ product.image|media_folder_products }}" alt="{{ product.name|capfirst }}">
                             <h4>{{ product.name|capfirst }}</h4>
                             <h6>{{ product.price }}</h6>
                         </div>
