@@ -74,7 +74,8 @@ def edit(request):
 
     context = {
         'title': title,
-        'edit_form': edit_form
+        'edit_form': edit_form,
+        'links_menu': links_menu,
     }
 
     return render(request, 'authapp/edit.html', context)

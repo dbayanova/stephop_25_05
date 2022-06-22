@@ -131,10 +131,10 @@ a {
 /* Banner Style */
 .banner {
 	margin-top: 50px;
-	background-image: url(../images/banner-bg.jpg);
+	background-image: url(../images/to-banner2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding: 150px 0px;
+	padding: 170px 40px;
 	background-position: center center;
 }
 .banner .caption {
@@ -380,6 +380,7 @@ a {
 	font-size: 15px;
 	font-weight: 700;
 	background-color: transparent;
+
 }
 /* Isotope Transitions
 ------------------------------- */
